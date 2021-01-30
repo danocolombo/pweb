@@ -37,6 +37,7 @@ export default function SectionBigger() {
             </GridContainer>
             <div>
                 <GridContainer>
+                    {/* 
                     <GridItem xs={12} sm={4} md={4}>
                         <InfoArea
                             title='Wholeness'
@@ -46,6 +47,7 @@ export default function SectionBigger() {
                             vertical
                         />
                     </GridItem>
+                */}
                     <GridItem xs={12} sm={4} md={4}>
                         <InfoArea
                             title='Engineering'

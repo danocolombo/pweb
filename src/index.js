@@ -17,7 +17,7 @@ import MainPage from 'views/MainPage/MainPage.js';
 import LoginPage from 'views/LoginPage/LoginPage.js';
 import PresentationPage from 'views/PresentationPage/PresentationPage.js';
 import PricingPage from 'views/PricingPage/PricingPage.js';
-import ProfilePage from 'views/ProfilePage/ProfilePage.js';
+import Profile from 'views/ProfilePage/Profile.page.js';
 import ProductPage from 'views/ProductPage/ProductPage.js';
 import SectionsPage from 'views/SectionsPage/SectionsPage.js';
 import ShoppingCartPage from 'views/ShoppingCartPage/ShoppingCartPage.js';
@@ -37,9 +37,10 @@ ReactDOM.render(
       <Route path="/ecommerce-page" component={EcommercePage} />
       <Route path="/landing-page" component={LandingPage} /> */}
             <Route path='/main-page' component={MainPage} />
+            <Route path='/profile' component={Profile} />
             {/* <Route path="/login-page" component={LoginPage} />
       <Route path="/pricing" component={PricingPage} />
-      <Route path="/profile-page" component={ProfilePage} />
+      
       <Route path="/product-page" component={ProductPage} />
       <Route path="/sections" component={SectionsPage} />
       <Route path="/shopping-cart-page" component={ShoppingCartPage} />
