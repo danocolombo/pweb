@@ -24,7 +24,7 @@ import "assets/scss/material-kit-pro-react.scss?v=1.8.0";
 // pages used
 import MainPage from "views/MainPage/MainPage.js";
 import CloudPage from "views/CloudTech/CloudTech.js"
-
+import TechPage from "views/TechPage/TechPage.js"
 import AboutUsPage from "views/AboutUsPage/AboutUsPage.js";
 import BlogPostPage from "views/BlogPostPage/BlogPostPage.js";
 import BlogPostsPage from "views/BlogPostsPage/BlogPostsPage.js";
@@ -64,6 +64,7 @@ ReactDOM.render(
       <Route path="/sections" component={SectionsPage} />
       <Route path="/shopping-cart-page" component={ShoppingCartPage} />
       <Route path="/signup-page" component={SignupPage} />
+      <Route path="/tech-page" component={TechPage}/>
       <Route path="/error-page" component={ErrorPage} />
       <Route path="/" component={MainPage} />
     </Switch>

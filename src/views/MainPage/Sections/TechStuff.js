@@ -34,6 +34,10 @@ export default function TechStuff() {
       <div>
         <GridContainer>
           <GridItem xs={12} sm={4} md={4}>
+          <a
+                    href="/cloud"
+                    className={classes.block}
+                  >
             <InfoArea
               title="Cloud Technology"
               description="It is where all the power is going and how we will get things done."
@@ -41,6 +45,7 @@ export default function TechStuff() {
               iconColor="info"
               vertical
             />
+            </a>
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>
             <InfoArea
