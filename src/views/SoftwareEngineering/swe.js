@@ -21,11 +21,8 @@ import Parallax from "components/Parallax/Parallax.js";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
 
 // Sections for this page
-import SectionTech from "./Sections/TechStuff.js";
-import SectionFood from "./Sections/SectionFood";
-import SectionProduct from "./Sections/SectionProduct.js";
-import SectionTeam from "./Sections/SectionTeam.js";
-import SectionWork from "./Sections/SectionWork.js";
+import TechStuff from "./Sections/Tech.js";
+
 
 const useStyles = makeStyles(landingPageStyle);
 
@@ -52,9 +49,9 @@ export default function MainPage({ ...rest }) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>Against all odds</h1>
+              <h1 className={classes.title}>Software Engineering</h1>
               <h4>
-                From a little kid on a cattle ranch in the 60's to making dreams come alive in softare, it is beyond imaginary.
+                They said this day would not come, that everyone will always need hardware...
               </h4>
               <br />
             </GridItem>
@@ -63,49 +60,13 @@ export default function MainPage({ ...rest }) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionTech />
-          {/* <SectionFood /> */}
-          {/* <SectionWork /> */}
+          <TechStuff />
         </div>
       </div>
       <Footer
         content={
           <div>
             <div className={classes.left}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  {/* <a
-                    href="https://www.creative-tim.com/?ref=mkpr-landing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Creative Tim
-                  </a> */}
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  {/* <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-landing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    About us
-                  </a> */}
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  {/* <a href="//blog.creative-tim.com/" className={classes.block}>
-                    Blog
-                  </a> */}
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  {/* <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-landing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a> */}
-                </ListItem>
-              </List>
             </div>
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , Dano Colombo

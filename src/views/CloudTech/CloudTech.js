@@ -21,8 +21,8 @@ import Parallax from "components/Parallax/Parallax.js";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
 
 // Sections for this page
-import SectionAWS from "./Sections/AWS.js";
-
+import SectionAWS from "./Sections/CloudBasics.js";
+import SectionCerts from "./Sections/AWSCertification.js"
 
 const useStyles = makeStyles(landingPageStyle);
 
@@ -61,6 +61,11 @@ export default function MainPage({ ...rest }) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <SectionAWS />
+        </div>
+      </div>
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classes.container}>
+          <SectionCerts />
         </div>
       </div>
       <Footer

@@ -23,7 +23,7 @@ export default function TechStuff() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={8} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk tech</h2>
+          <h2 className={classes.title}>Software Engineering</h2>
           <h5 className={classes.description}>
             Whether we are using our smart phones, balancing our bank account,
             to scheduling the temperature on our house thermostats or programming 
