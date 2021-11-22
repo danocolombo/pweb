@@ -18,9 +18,10 @@ import Button from "components/CustomButtons/Button.js";
 // import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
+import landingPageStyle from "assets/jss/material-kit-pro-react/views/mainPageStyles.js";
 
 // Sections for this page
+import FileCabinet from "./Sections/FileCabinet.js";
 import SectionTech from "./Sections/TechStuff.js";
 import SectionFood from "./Sections/SectionFood";
 import SectionProduct from "./Sections/SectionProduct.js";
@@ -63,6 +64,7 @@ export default function MainPage({ ...rest }) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
+          <FileCabinet />
           <SectionTech />
           {/* <SectionFood /> */}
           {/* <SectionWork /> */}

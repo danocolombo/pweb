@@ -40,9 +40,10 @@ export default function InfoArea(props) {
   }
   return (
     <div className={infoAreaClasses}>
-      <div className={iconWrapper}>{icon}</div>
+      <img src={certImage} alt="AWS Certification" />
+      {/* <div className={iconWrapper}>{icon}</div> */}
       <div className={classes.descriptionWrapper}>
-        <h4 className={classes.title}>{title}</h4>
+        {/* <h4 className={classes.title}>{title}</h4> */}
         <div className={classes.description}>{description}</div>
       </div>
     </div>
